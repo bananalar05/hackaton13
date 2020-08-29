@@ -1,0 +1,42 @@
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 15px;
+  padding: 20px;
+
+}
+
+.card{
+  border-radius: 10px;
+  border: 2px solid #4dcc3c;
+  padding: 10px;
+  max-width: 270px;
+
+  background-color: rgb(121, 223, 117);
+
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+
+  h2{
+    font-weight: bold;
+    font-size: 1.6rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  h3{
+    font-size: 1.1rem;
+    margin-bottom: 12px;
+  }
+}
+
+.card img,
+.card figure {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 120px;
+  margin-bottom: 30px;
+  margin: auto;
+  text-align: center;
+}

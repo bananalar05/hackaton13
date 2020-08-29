@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hackaton12</title>
+  <link rel="stylesheet" href="./styles/main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <main>
+    <h1>Cartilla de Mascotas</h1>
+    <button class="button-modal js_add_pet">Add<br>Pets</button>
+    <div class="container" id="container"></div>
+    <div class="modal js_modal_1">
+      <div class="modal__inner">
+        <form class="js_form_1">
+          <div class="modal__header">
+            AGREGAR MASCOTA
+            <span class="modal__close js_x_close">X</span>
+          </div>
+          <div class="modal__body">
+
+            <input required class="js_name" type="text" placeholder="Nombre de tu mascota">
+            <input required class="js_age" type="text" placeholder="Edad de tu mascota">
+            <input required class="js_phone" type="number" placeholder="Teléfono del dueño">
+            <br><br>
+            <input required class="js_country" type="text" placeholder="País de residencia">
+            <input required class="js_photo" type="text" placeholder="Foto de tu mascota (url)">
+            <br><br>
+            <textarea required class="js_description" cols="83" rows="5" placeholder="Describe a tu mascota"></textarea>
+                      
+          </div>
+          <div class="modal__footer">
+            <button class="modal__button modal__button--accept js_button_accept">Aceptar</button>
+            <button class="modal__button modal__button--cancel js_button_cancel">Cancelar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+   
+    <script type="module" src="./scripts/main.js"></script>
+</body>
+
+</html>

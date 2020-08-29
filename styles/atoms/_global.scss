@@ -1,0 +1,33 @@
+*{
+  /* Box-model */
+  box-sizing: border-box;
+}
+
+body{
+  /*Tipografía*/
+  background-image: url(https://bit.ly/2YINlXz);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 99vw;
+  height: 100vh;
+}
+
+h1{
+  /* Box-model */
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding: 15px;
+  animation: up .6s infinite alternate ease-in-out;
+
+  /*Tipografía*/
+  font-family: 'Luckiest Guy', cursive;
+  font-size: 4.0rem;
+  color: map-get($color, primary);
+  background-color: map-get($bg-color, primary);
+  text-align: center;
+}
+
+@keyframes up{
+  0% {transform: translateY(-7px)}
+  100% {transform: translateY(7px);}
+}
