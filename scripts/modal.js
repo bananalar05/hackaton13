@@ -13,7 +13,9 @@ function Modal(element, objCb = {}) {
     // this.close();
   };
 
-  this.buttonACancel.onclick = () => {
+  this.buttonACancel.onclick = (e) => {
+    e.preventDefault();
+        
     objCb.cancel()
     // this.close();
   };

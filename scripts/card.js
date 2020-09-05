@@ -112,6 +112,7 @@ function editCard(card, values) {
     },
     cancel: function () {
       console.log("cancelar!!");
+      modal.close();
     },
   });
   modal.open();
